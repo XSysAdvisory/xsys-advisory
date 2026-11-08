@@ -9,9 +9,10 @@ export default async function handler(req,context){
  if(b?.consent!==true)return respond({error:"Persetujuan pengiriman data diperlukan"},400);
  const name=clean(b.name,100),contact=clean(b.contact,160),company=clean(b.company,120),service=clean(b.service,70),details=clean(b.details,1000);
  if(!name||!contact||!details)return respond({error:"Nama, kontak dan kebutuhan wajib diisi"},400);
- if(!/^[\w.+@()\-\s]{5,160}$/.test(contact))return respond({error:"Format kontak tidak valid"},400);
+ if(!(/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(contact)||/^\+?[0-9()\-\s]{8,25}$/.test(contact)))return respond({error:"Format kontak tidak valid"},400);
  const record={id:crypto.randomUUID(),created_at:new Date().toISOString(),source:"nara_web",stage:"New",name,contact,company,service,details,consent_at:new Date().toISOString()};
- const isProduction=context?.deploy?.context==="production";
+ const deploymentContext=Netlify.env.get("CONTEXT")||process.env.CONTEXT||context?.deploy?.context||"";
+ const isProduction=deploymentContext==="production";
  const store=isProduction?getStore({name:"nara-leads-production",consistency:"strong"}):getDeployStore("nara-leads-preview");
  try{await store.setJSON("lead/"+record.id,record,{onlyIfNew:true});return respond({ok:true,reference:record.id,message:"Permintaan Anda sudah diterima oleh sistem XSys. Tim kami akan menindaklanjuti melalui kontak yang diberikan."},201)}
  catch(e){console.error("NARA lead storage error",e?.name);return respond({error:"Penyimpanan belum tersedia. Silakan hubungi XSys melalui WhatsApp atau email."},503)}
