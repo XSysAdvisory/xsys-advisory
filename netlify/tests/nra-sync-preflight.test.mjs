@@ -1,0 +1,10 @@
+import test from "node:test";
+import assert from "node:assert/strict";
+import {STAGING_SHEET_ID,PRODUCTION_CRM_ID,syncPreflight,mapLeadToStagingRow} from "../lib/nra-sync-preflight.mjs";
+const valid={spreadsheetId:STAGING_SHEET_ID,credentialAvailable:true,enabled:true,organizer:"XSys",mode:"dry-run"};
+test("staging dry-run ready with credential",()=>assert.equal(syncPreflight(valid).ready,true));
+test("production CRM blocked",()=>assert.equal(syncPreflight({...valid,spreadsheetId:PRODUCTION_CRM_ID}).ready,false));
+test("no credentials fails closed",()=>assert.equal(syncPreflight({...valid,credentialAvailable:false}).reason,"GOOGLE_CREDENTIAL_MISSING"));
+test("other organizer excluded",()=>assert.equal(syncPreflight({...valid,organizer:"Traineed Indonesia"}).ready,false));
+test("write mode blocked",()=>assert.equal(syncPreflight({...valid,mode:"write"}).ready,false));
+test("lead mapping deterministic",()=>assert.equal(mapLeadToStagingRow({source:"nara_web",id:"123",created_at:"2026-11-08",name:"PIC"}).key,"123"));
