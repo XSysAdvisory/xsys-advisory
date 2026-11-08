@@ -61,3 +61,10 @@ Do not claim production readiness until all applicable gates pass.
 - Traineed Indonesia: ISO 37001 Online 12–13 Nov 2026; ISO 14001 Online 14–15 Nov 2026.
 - The presence of an event on XSys Calendar does not imply XSys owns or organizes it.
 - Add `organizer_legal_entity`, `commercial_owner`, `trainer_assignment`, and `resource_conflict` as distinct fields. Never infer commercial ownership from calendar account.
+
+## Owner-verified XSys operational baseline — 2026-11-08
+- Owner explicitly confirms **zero XSys•Advisory activities** planned, confirmed, underway, or completed to date.
+- Do not count Traineed Indonesia training or other external organizer engagements as XSys projects, delivery, revenue, or portfolio.
+- XSys project schedule, confirmed projects, and completed-delivery metrics begin at zero until supported by owner-verified evidence.
+- This does not imply zero sales prospects, marketing activities, or future potential opportunities; track those separately without fabricating deals.
+- Existing Traineed planning entries on the XSys account calendar are misattributed for business reporting; do not automatically delete or edit calendar events without instruction.
