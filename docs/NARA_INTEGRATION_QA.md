@@ -3,7 +3,7 @@
 ## Ground truth
 - Official account: xsys.advisory@gmail.com only.
 - Existing CRM: XSys_CRM_Operasional_Admin_v0.1.xlsx, Drive ID 19T9GXihaSwZHIlol1tV1qCr2RXbJFv36. This is an Excel workbook stored in Drive, NOT a native Google Sheet; it is a template with no imported live transactions. Preserve original.
-- Existing calendar: xsys.advisory@gmail.com. Nov 12–13 ISO 37001 Online and Nov 14–15 ISO 14001 Online are planning events, not confirmed trainer reservations.
+- Existing calendar: xsys.advisory@gmail.com. Nov 12–13 ISO 37001 Online and Nov 14–15 ISO 14001 Online are **TRAINEED INDONESIA activities, NOT XSys•Advisory projects**. They are planning events, not confirmed trainer reservations. Exclude both from XSys sales pipeline, turnover, delivery KPIs and client portfolio. Only consider trainer/person availability when independently verified.
 
 ## Mapping lead intake -> CRM (staging only until authenticated write integration)
 | Web lead | CRM LEAD & PERTANYAAN | Rule |
@@ -56,3 +56,8 @@ Do not claim production readiness until all applicable gates pass.
 - Existing calendar items with ambiguous organizer remain `UNVERIFIED`; do not reclassify by guesswork or edit events without review.
 - Exclude `TRAINEED` from XSys sales dashboards and automated follow-ups; maintain partner engagement as separate reporting category.
 - Require explicit owner/contract evidence before promoting a partner engagement to XSys commercial pipeline.
+
+## Organizer separation — owner correction
+- Traineed Indonesia: ISO 37001 Online 12–13 Nov 2026; ISO 14001 Online 14–15 Nov 2026.
+- The presence of an event on XSys Calendar does not imply XSys owns or organizes it.
+- Add `organizer_legal_entity`, `commercial_owner`, `trainer_assignment`, and `resource_conflict` as distinct fields. Never infer commercial ownership from calendar account.
