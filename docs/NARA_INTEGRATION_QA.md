@@ -48,3 +48,11 @@ Do not write to the existing workbook until native Sheets conversion/copy, schem
 - [ ] Owner authorizes production rollout after tests.
 
 Do not claim production readiness until all applicable gates pass.
+
+## Mandatory organizer separation — Traineed vs XSys
+- Classify each activity by contracting organizer/client ownership, NOT by trainer identity or mere calendar presence.
+- `organizer_owner`: `XSYS`, `TRAINEED`, `OTHER`, `UNVERIFIED`; `commercial_owner`: separately verified; `trainer_engagement`: external/partner/internal; `calendar_visibility`: availability_only or operational.
+- Traineed activities can block a trainer's actual availability, but must NOT create XSys leads, quotations, invoices, revenue, sales KPIs or customer ownership without documented XSys commercial role.
+- Existing calendar items with ambiguous organizer remain `UNVERIFIED`; do not reclassify by guesswork or edit events without review.
+- Exclude `TRAINEED` from XSys sales dashboards and automated follow-ups; maintain partner engagement as separate reporting category.
+- Require explicit owner/contract evidence before promoting a partner engagement to XSys commercial pipeline.
