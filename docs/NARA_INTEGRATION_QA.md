@@ -71,7 +71,13 @@ Do not claim production readiness until all applicable gates pass.
 
 ## NXA cut-off policy — effective 2026-11-08 (owner instruction)
 - `NXA` means `Nara XSys Advisory`.
-- From 2026-11-08 onward, prefix **all new official XSys activities** with `NXA` (e.g. `NXA | Training ISO 22000 | Client | 2026-11-20`). Apply to calendar events, activity registers, task names and internal operational records where applicable.
+- From 2026-11-08 onward, prefix **all new official XSys activities** with `NXA` (e.g. `NXA | RA | Training ISO 22000 | PT ABC | 20 Nov 2026`). Apply to calendar events, activity registers, task names and internal operational records where applicable.
 - Official XSys calendar `xsys.advisory@gmail.com` is reserved exclusively for XSys activities. Do not add Traineed, LUWANA or other organizers' engagements to it.
 - Pre-cut-off events from Traineed on XSys calendar are legacy contamination, not XSys activity. Do not count in CRM, KPIs or portfolio. Do not delete/move legacy events without explicit confirmation of handling.
 - NXA prefix does not establish a confirmed commercial engagement: preserve separate status and owner approval checks.
+
+## Two-character trainer code (owner update)
+- Required title format: `NXA | [TT] | [Activity] | [Client] | [Date]`, where `[TT]` is a **two-letter trainer identifier**.
+- Confirmed identifier: `RA` = Rubai Ahmad.
+- Multiple trainers: join their verified identifiers with a hyphen, e.g. `RA-XX`; never infer codes from similar initials without directory validation.
+- Do not assign or promise a trainer until competence, availability and resources are checked. Unknown trainer: keep draft status rather than invent a code.
