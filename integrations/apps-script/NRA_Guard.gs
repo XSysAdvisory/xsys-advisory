@@ -7,7 +7,8 @@ const NRA_GUARD = Object.freeze({
   trainerSheet: 'TRAINER',
   trainingSheet: 'TRAINING',
   statusConfirmed: 'Terkonfirmasi',
-  verified: 'TERVERIFIKASI'
+  verified: 'TERVERIFIKASI',
+  trainerConfirmed: 'Confirmed' // Manual confirmation; never infer from program status
 });
 
 function nraGuardReview() {
@@ -38,11 +39,15 @@ function nraGuardReview() {
     const status = String(r[13] || '').trim(); // N
     const trainerCode = String(r[19] || '').trim().toUpperCase(); // T
     const syncStatus = String(r[21] || '').trim(); // V
+    const trainerApproval = String(r[14] || '').trim(); // O
+    const eventId = String(r[22] || '').trim(); // W
     if (syncStatus === 'PENDING_REVIEW') report.pendingReview++;
     if (status === NRA_GUARD.statusConfirmed) {
       report.confirmed++;
       if (syncStatus === 'PENDING_REVIEW') {
         if (!codeMap[trainerCode]) report.errors.push('TRAINING baris ' + (i + 5) + ': kode trainer belum terverifikasi');
+        else if (trainerApproval !== NRA_GUARD.trainerConfirmed) report.errors.push('TRAINING baris ' + (i + 5) + ': konfirmasi trainer belum disetujui');
+        else if (eventId) report.errors.push('TRAINING baris ' + (i + 5) + ': sudah ada ID event; periksa duplikasi');
         else report.readyForHumanReview++;
       }
     }
