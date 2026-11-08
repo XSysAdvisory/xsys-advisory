@@ -1,0 +1,12 @@
+import test from "node:test";
+import assert from "node:assert/strict";
+import {checkAssignment,validateTrainerDirectory} from "../lib/trainer-assignment.mjs";
+const trainers=[{code:"RA",name:"Rubai Ahmad",active:true,skills:["ISO 22000"],availabilityVerified:true},{code:"RB",name:"Trainer B",active:true,skills:["ISO 22000"],availabilityVerified:true}];
+const base={trainerCode:"RA",topic:"ISO 22000",start:"2026-11-20T08:00:00+07:00",end:"2026-11-20T16:00:00+07:00",trainers};
+test("qualified trainer with verified availability",()=>assert.equal(checkAssignment(base).eligible,true));
+test("same trainer overlapping rejected",()=>assert.equal(checkAssignment({...base,assignments:[{trainerCode:"RA",start:"2026-11-20T09:00:00+07:00",end:"2026-11-20T11:00:00+07:00"}]}).reason,"TRAINER_TIME_CONFLICT"));
+test("different trainer same time permitted for further resource review",()=>assert.equal(checkAssignment({...base,assignments:[{trainerCode:"RB",start:"2026-11-20T09:00:00+07:00",end:"2026-11-20T11:00:00+07:00"}]}).eligible,true));
+test("unverified skill rejected",()=>assert.equal(checkAssignment({...base,topic:"ISO 14001"}).reason,"SKILL_NOT_VERIFIED"));
+test("unverified availability rejected",()=>assert.equal(checkAssignment({...base,trainers:[{...trainers[0],availabilityVerified:false}]}).reason,"AVAILABILITY_NOT_VERIFIED"));
+test("duplicate trainer codes rejected",()=>assert.throws(()=>validateTrainerDirectory([...trainers,trainers[0]])));
+test("adjacent assignments not overlapping",()=>assert.equal(checkAssignment({...base,assignments:[{trainerCode:"RA",start:"2026-11-20T16:00:00+07:00",end:"2026-11-20T17:00:00+07:00"}]}).eligible,true));
