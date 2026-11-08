@@ -91,3 +91,9 @@ Do not claim production readiness until all applicable gates pass.
 - `[DDMMYY]`: local activity date in Asia/Jakarta; for multi-day programs, define an unambiguous date-range convention before implementation.
 - Use hyphen between prefix and trainer; underscores between remaining components; no vertical bars.
 - This is a naming policy, not authorization to create fictional calendar bookings or change existing records.
+
+## CRM staging isolation checkpoint — 2026-11-08
+- Source operational CRM: `19T9GXihaSwZHIlol1tV1qCr2RXbJFv36`, Excel MIME type, untouched.
+- Created independent **private** staging copy `13PNMacGSnOX2YJ0KWinWUA5xd7MBq0lX`, named `NRA_CRM_STAGING_20261108_DO_NOT_USE_FOR_OPERATIONS.xlsx`, under XSys My Drive root. Verified distinct ID, same file size 28063 bytes, owner-only permissions.
+- Staging copy remains Excel, **not** native Google Sheets; no automated sync has been configured. No fabricated leads, bookings or trainer assignments added.
+- Next gated steps: native conversion of staging workbook, read headers/formulas/validations, verify trainer codes, dry-run field mapping and calendar read-only conflict checks. Do not overwrite source or publish production.
