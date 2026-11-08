@@ -1,0 +1,50 @@
+# NARA — Integration Contract & QA Gate (2026-11-08)
+
+## Ground truth
+- Official account: xsys.advisory@gmail.com only.
+- Existing CRM: XSys_CRM_Operasional_Admin_v0.1.xlsx, Drive ID 19T9GXihaSwZHIlol1tV1qCr2RXbJFv36. This is an Excel workbook stored in Drive, NOT a native Google Sheet; it is a template with no imported live transactions. Preserve original.
+- Existing calendar: xsys.advisory@gmail.com. Nov 12–13 ISO 37001 Online and Nov 14–15 ISO 14001 Online are planning events, not confirmed trainer reservations.
+
+## Mapping lead intake -> CRM (staging only until authenticated write integration)
+| Web lead | CRM LEAD & PERTANYAAN | Rule |
+|---|---|---|
+| reference UUID | Lead ID | Retain UUID as external ID; generate LEAD-YYYY-#### only with atomic allocation |
+| created_at | Tanggal Terima | Convert UTC to Asia/Jakarta |
+| company | Nama Klien | No invented company |
+| name | PIC Klien | Required |
+| contact | Email/WA | Consent required |
+| service | Kategori Kebutuhan | Controlled mapping |
+| details | Topik / Catatan | Human review for scope and dates |
+| New | Status Lead | Never auto-mark Won |
+
+Do not write to the existing workbook until native Sheets conversion/copy, schema validation, permissions, duplicate policy, and idempotent write are proven. The Netlify lead store and Drive workbook are **not yet synchronized**.
+
+## Calendar and trainer matching
+- Read calendar in Asia/Jakarta, include transparent/tentative events but mark planning distinctly from confirmed assignments.
+- Never use calendar free/busy alone as proof a trainer is available. Maintain per-trainer verified availability, skills, assignments, travel buffers and online-platform resources.
+- Same-date parallel programs are permitted with distinct qualified available PICs and sufficient resources; conflicts are person/resource-specific.
+- Require human approval before writing confirmed calendar events or issuing commercial commitments.
+- Training directory columns: Trainer ID, Nama, Spesialisasi, Email, WhatsApp, Domisili, Ketersediaan, Kontrak/NDA, Profil/Bio, Rate Referensi, Status, Catatan.
+
+## Integration architecture (NOT yet active)
+1. Visitor submits opt-in lead to Netlify backend.
+2. Backend stores isolated preview/production record.
+3. Secure server-side job, using dedicated Google OAuth credentials and scoped permissions, syncs to a NEW native Google Sheet after schema/idempotency checks; never expose OAuth tokens in browser.
+4. Read-only calendar availability and verified trainer directory feed lead qualification; write confirmed calendar events only after human approval.
+5. Notify sales only after successful durable write, with retry/dead-letter and audit log.
+
+## QA gate
+- [x] GitHub branch and preview deploy exist.
+- [x] Existing CRM workbook located; headers reviewed.
+- [x] Official calendar found; planning events identified.
+- [ ] Verify runtime lead POST returns 201 and record persists; use fictional test record and delete after.
+- [ ] Verify CRM GET returns 401 without token and authorized reads with secret token.
+- [ ] Configure admin token; prior Netlify env write returned 403.
+- [ ] Create native Sheet staging copy, verify schema and permissions.
+- [ ] Implement and test authenticated idempotent sync.
+- [ ] Implement and test trainer/resource-aware availability.
+- [ ] Verify existing website pages/functions remain unchanged.
+- [ ] OpenAI API funded and end-to-end chat tested.
+- [ ] Owner authorizes production rollout after tests.
+
+Do not claim production readiness until all applicable gates pass.
