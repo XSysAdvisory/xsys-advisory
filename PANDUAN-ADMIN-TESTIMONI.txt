@@ -1,0 +1,9 @@
+XSys.Advisory V23 — Moderasi komentar dan foto
+
+1. Setelah deploy, buka Netlify > Project xsys-advisory > Forms. Pastikan form "pengalaman-peserta" terdeteksi.
+2. Lakukan satu pengiriman uji dengan alamat email yang Anda kendalikan. Periksa submission di Netlify Forms, termasuk berkas foto.
+3. Seluruh kiriman berstatus REVIEW DI NETLIFY; tidak ada skrip yang otomatis memasukkannya ke halaman publik.
+4. Untuk menerbitkan testimoni: periksa izin, identitas, dan konteks; siapkan salinan materi yang disetujui untuk ditambahkan ke galeri publik dalam deployment baru. Persetujuan di dashboard Netlify Forms TIDAK otomatis menerbitkan testimoni.
+5. Gunakan hanya foto yang telah diizinkan; hindari klaim bahwa semua kegiatan diselenggarakan langsung oleh XSys.
+6. Jangan menampilkan email pengirim. Kritik konstruktif juga harus dipertimbangkan secara adil.
+7. Netlify Forms memiliki batas ukuran upload dan kuota sesuai paket. Jika unggahan gagal, gunakan gambar berukuran lebih kecil (di bawah 5 MB).

@@ -1,0 +1,17 @@
+XSYS ADVISORY — V24 MODERASI TESTIMONI
+
+PENTING: Paket ini memerlukan Netlify Build (continuous deployment via Git atau Netlify CLI deploy --build), BUKAN Netlify Drop ZIP biasa. Upload ZIP Drop saja tidak akan menyalakan backend, dan panel admin akan menampilkan error konfigurasi.
+
+1. Buat repo Git privat dari isi folder ini. Hubungkan repo ke proyek XSys-Advisory yang sudah ada. Jangan buat website publik kedua.
+2. Set environment variables di Netlify > Project configuration > Environment variables dengan scope Functions (jangan tulis nilainya dalam HTML):
+   XSYS_MODERATOR_TOKEN = string acak minimal 32 karakter (simpan aman)
+   NETLIFY_ACCESS_TOKEN = personal access token dengan izin membaca Forms pada proyek ini
+   XSYS_FEEDBACK_FORM_ID = 6acfa6f44fcb82731f078c08
+3. Install/build via Netlify Git continuous deployment, lalu cek Functions tersedia pada deployment. TOKEN wajib rahasia; jangan kirim pada chat.
+4. Untuk admin buka /admin/ di domain XSys, masukkan token, klik Ambil kiriman, lalu Setujui/Tolak/Tunda.
+5. Hanya status approved dengan izin_publikasi=ya yang ditayangkan pada section Suara Peserta. Email tidak pernah dikirim ke pengunjung.
+6. Moderasi lama di Netlify Forms tetap utuh. Netlify Verified hanya anti-spam, bukan status approved.
+7. Sebelum produksi, uji foto, izin publikasi, tampil/hilang setelah keputusan, serta rate limiting dan pengamanan token. Bila kiriman >100, tambahkan pagination Netlify API (versi awal menangani 100 kiriman terbaru saja).
+8. Kunci panel admin saat tidak dipakai. Jangan menampilkan email peserta atau token pada screenshot.
+
+Jika tetap memakai Netlify Drop, website publik dan Forms tetap jalan, tetapi moderasi klik-to-publish TIDAK AKTIF.
