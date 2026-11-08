@@ -68,3 +68,10 @@ Do not claim production readiness until all applicable gates pass.
 - XSys project schedule, confirmed projects, and completed-delivery metrics begin at zero until supported by owner-verified evidence.
 - This does not imply zero sales prospects, marketing activities, or future potential opportunities; track those separately without fabricating deals.
 - Existing Traineed planning entries on the XSys account calendar are misattributed for business reporting; do not automatically delete or edit calendar events without instruction.
+
+## NXA cut-off policy — effective 2026-11-08 (owner instruction)
+- `NXA` means `Nara XSys Advisory`.
+- From 2026-11-08 onward, prefix **all new official XSys activities** with `NXA` (e.g. `NXA | Training ISO 22000 | Client | 2026-11-20`). Apply to calendar events, activity registers, task names and internal operational records where applicable.
+- Official XSys calendar `xsys.advisory@gmail.com` is reserved exclusively for XSys activities. Do not add Traineed, LUWANA or other organizers' engagements to it.
+- Pre-cut-off events from Traineed on XSys calendar are legacy contamination, not XSys activity. Do not count in CRM, KPIs or portfolio. Do not delete/move legacy events without explicit confirmation of handling.
+- NXA prefix does not establish a confirmed commercial engagement: preserve separate status and owner approval checks.
