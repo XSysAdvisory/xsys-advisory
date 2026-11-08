@@ -8,7 +8,8 @@ function normalizedPart(value,label){
  return s;
 }
 export function normalizeCompanyName(value){
- const s=normalizedPart(value,"Nama perusahaan").replace(LEGAL_PREFIX,"").trim();
+ const original=normalizedPart(value,"Nama perusahaan");
+ const s=original.replace(LEGAL_PREFIX,"").replace(/^(?:PT|CV|UD|PD|TBK)\.?$/i,"").trim();
  if(!s)throw new Error("Nama perusahaan tidak boleh hanya bentuk badan usaha");
  return s;
 }
