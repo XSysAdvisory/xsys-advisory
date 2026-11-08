@@ -81,3 +81,13 @@ Do not claim production readiness until all applicable gates pass.
 - Confirmed identifier: `RA` = Rubai Ahmad.
 - Multiple trainers: join their verified identifiers with a hyphen, e.g. `RA-XX`; never infer codes from similar initials without directory validation.
 - Do not assign or promise a trainer until competence, availability and resources are checked. Unknown trainer: keep draft status rather than invent a code.
+
+## Latest owner-approved activity identifier format — supersedes NXA display format (2026-11-08)
+- Canonical format: `NRA-[TT]_[Activity]_[Company]_[DDMMYY]`.
+- Owner's exact example: `NRA-RA_Training ISO 22000_ABC_201126`.
+- `NRA` is the latest explicit activity prefix; it **supersedes** previous `NXA` naming instructions for new activity labels. Do not silently revert to NXA.
+- `[TT]`: verified unique two-letter trainer code; `RA` = Rubai Ahmad.
+- `[Company]`: concise company name without legal-form prefixes such as PT or CV; retain enough information to avoid ambiguity.
+- `[DDMMYY]`: local activity date in Asia/Jakarta; for multi-day programs, define an unambiguous date-range convention before implementation.
+- Use hyphen between prefix and trainer; underscores between remaining components; no vertical bars.
+- This is a naming policy, not authorization to create fictional calendar bookings or change existing records.
