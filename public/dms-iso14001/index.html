@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow"><meta name="color-scheme" content="light">
+<title>XSys•Advisory | DMS ISO 14001:2026</title>
+<style>
+:root{--navy:#193756;--navy2:#102b48;--green:#138d7c;--ink:#243747;--gray:#63788a;--line:#dce6ee;--bg:#f4f8fb;--white:#fff}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.52 system-ui,-apple-system,"Segoe UI",sans-serif}
+header{padding:24px max(18px,4vw);background:linear-gradient(112deg,var(--navy2),#235778);color:white}
+.top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.brand{font-weight:850;font-size:20px;letter-spacing:.01em}.brand b{color:#51d2b0}.eyebrow{font-size:10px;letter-spacing:.17em;text-transform:uppercase;color:#b9dbec}
+.sub{max-width:740px;color:#d6e7f3}.pill{padding:6px 10px;font-size:11px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.3);border-radius:22px}
+.wrap{max-width:1370px;margin:auto;padding:18px}
+.notice{border:1px solid #f0deb8;background:#fffaed;border-radius:10px;padding:11px 15px;color:#705424;margin:0 0 15px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.stat{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.stat strong{font-size:25px;display:block;color:var(--navy)}.stat span{font-size:11px;color:var(--gray)}
+.controls{display:flex;gap:9px;margin:16px 0;flex-wrap:wrap}
+input,select{border:1px solid #cbd9e4;border-radius:9px;padding:11px;background:white;color:var(--ink);font:inherit;min-width:140px}
+#search{flex:1;min-width:250px}.work{display:grid;grid-template-columns:minmax(350px,0.96fr) minmax(360px,1.22fr);gap:14px}
+.panel{background:white;border:1px solid var(--line);border-radius:12px;overflow:hidden}.head{padding:13px 15px;border-bottom:1px solid var(--line);font-weight:730}
+.list{height:min(66vh,680px);overflow:auto}.doc{width:100%;display:block;text-align:left;background:white;border:0;border-bottom:1px solid #eef2f6;padding:12px 16px;cursor:pointer;color:inherit;font:inherit}
+.doc:hover,.doc.selected{background:#edf8f7}.doc small{display:block;color:var(--gray);margin-top:3px}.code{color:#197c79;font-family:ui-monospace,monospace;font-size:11px;font-weight:750}.doctitle{font-weight:680;font-size:13px;margin-top:2px}
+.tag{font-size:10px;border:1px solid #cee2e1;padding:2px 6px;border-radius:9px;display:inline-block;margin-left:6px}
+.detail{padding:24px;min-height:480px}.detail h2{font-size:23px;line-height:1.25;margin:12px 0}
+.detail .state{color:#936218;background:#fff4d7;border-radius:5px;padding:3px 8px;font-size:11px}
+table{width:100%;border-collapse:collapse;margin:16px 0}th,td{text-align:left;padding:9px 8px;border-bottom:1px solid #eaf0f5;vertical-align:top}
+th{width:34%;font-weight:600;color:var(--gray)}.action{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--navy);color:white;border:0;border-radius:8px;padding:11px 15px;text-decoration:none;cursor:pointer;font:inherit;font-weight:650}
+.action:hover{background:var(--green)}.ghost{background:white;color:var(--navy);border:1px solid #bdcedb}.ghost:hover{color:white}
+.instruction{margin-top:14px;background:#f3f7fa;padding:12px;border-radius:8px;color:var(--gray);font-size:12px}
+.footer{margin-top:25px;font-size:11px;color:var(--gray);text-align:center}
+.loading{padding:24px;color:var(--gray)}
+@media(max-width:780px){.stats{grid-template-columns:repeat(2,1fr)}.work{grid-template-columns:1fr}.list{height:330px}.detail{min-height:auto}.detail h2{font-size:19px}}
+</style></head><body>
+<header><div class="top"><div><div class="eyebrow">Training • Consulting • Mentoring</div><div class="brand">XSys<b>•</b>Advisory <span style="font-weight:400;font-size:13px">/ DMS</span></div></div><span class="pill">ISO 14001:2026 · Training Library</span></div>
+<h1 style="font-size:27px;line-height:1.25;margin:15px 0 5px">Document Management System</h1>
+<div class="sub">Perpustakaan contoh dokumen Sistem Manajemen Lingkungan DL1–DL4. Studi kasus PT Tiga Sakti Adhimulia. Pemilik tunggal dan pengendali master: XSys•Advisory.</div></header>
+<main class="wrap">
+<div class="notice"><b>Materi pelatihan, bukan dokumen perusahaan yang telah disahkan.</b> Seluruh berkas berstatus DRAFT SAMPLE. Katalog dapat ditelusuri, sedangkan berkas PDF di Google Drive memerlukan izin Viewer dari XSys.</div>
+<div class="stats"><div class="stat"><strong id="total">64</strong><span>Total dokumen contoh</span></div><div class="stat"><strong>4</strong><span>Level dokumen DL1–DL4</span></div><div class="stat"><strong id="mandatory">—</strong><span>Judul mandatory (M)</span></div><div class="stat"><strong>00</strong><span>Revisi contoh saat ini</span></div></div>
+<div class="controls"><input id="search" aria-label="Cari dokumen" placeholder="Cari judul, kode, klausul, kata kunci..."><select id="level" aria-label="Filter level"><option value="">Semua level</option><option>DL1</option><option>DL2</option><option>DL3</option><option>DL4</option></select><select id="cat" aria-label="Filter status"><option value="">Semua kategori</option><option value="M">Mandatory</option><option value="M*">Bersyarat</option><option value="V">Voluntary</option></select></div>
+<div class="work"><section class="panel"><div class="head" id="found">Daftar induk dokumen</div><div class="list" id="list"><div class="loading">Memuat register ...</div></div></section>
+<section class="panel"><div class="head">Detail & akses dokumen</div><div class="detail" id="detail"><div class="loading">Pilih dokumen dari daftar.</div></div></section></div>
+<div class="footer">© 2026 XSys•Advisory · Disusun & difasilitasi Rubai Ahmad · xsys.advisory@gmail.com · Dokumen master hanya dikelola XSys.</div></main>
+<script>
+'use strict';
+var all=[], selected='';
+function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
+function filterDocs(){var q=document.getElementById('search').value.trim().toLowerCase(),l=document.getElementById('level').value,c=document.getElementById('cat').value;
+var a=all.filter(function(x){return (!l||x.level===l)&&(!c||x.category===c)&&(!q||(x.code+' '+x.title+' '+x.clause).toLowerCase().includes(q))});
+document.getElementById('found').textContent='Daftar dokumen · '+a.length+' dari '+all.length;
+document.getElementById('list').innerHTML=a.length?a.map(function(d){return '<button type="button" class="doc '+(d.code===selected?'selected':'')+'" data-code="'+esc(d.code)+'"><span class="code">'+esc(d.code)+'</span><span class="tag">'+esc(d.category)+'</span><div class="doctitle">'+esc(d.title)+'</div><small>Klausul '+esc(d.clause)+' · '+esc(d.level)+'</small></button>'}).join(''):'<div class="loading">Dokumen tidak ditemukan.</div>';
+if(a.length&&!a.some(function(x){return x.code===selected}))show(a[0].code)}
+function show(code){var d=all.find(function(x){return x.code===code});if(!d)return;selected=code;
+document.getElementById('detail').innerHTML='<span class="code">'+esc(d.code)+'</span> <span class="state">'+esc(d.status)+'</span><h2>'+esc(d.title)+'</h2>'+
+'<table><tr><th>Klausul ISO</th><td>'+esc(d.clause)+'</td></tr><tr><th>Level / kategori</th><td>'+esc(d.level)+' · '+esc(d.category)+'</td></tr><tr><th>No. revisi</th><td>'+esc(d.revision)+'</td></tr><tr><th>Tanggal efektif</th><td>'+(d.effective_date?esc(d.effective_date):'Belum ditetapkan — contoh latihan')+'</td></tr><tr><th>Pembuat / pemeriksa / penyetuju</th><td>Kolom tersedia dalam berkas, belum disahkan</td></tr><tr><th>Pemilik materi</th><td>XSys•Advisory</td></tr><tr><th>Studi kasus</th><td>'+esc(d.case_study)+'</td></tr><tr><th>Akses peserta</th><td>Google Drive Viewer (akses berbasis izin)</td></tr></table>'+
+'<a class="action" href="'+esc(d.url)+'" rel="noopener noreferrer" target="_blank">Buka PDF di Google Drive</a> '+
+'<button class="action ghost" id="copyDoc" type="button">Salin kode</button>'+
+'<div class="instruction"><b>Ketentuan:</b> Peserta hanya membuka contoh PDF. Jika muncul “Minta akses”, gunakan akun email yang didaftarkan ke XSys. Hak edit, pengesahan, dan penggantian versi hanya pada pengelola XSys.</div>';
+document.querySelectorAll('.doc').forEach(function(e){e.classList.toggle('selected',e.dataset.code===code)});
+document.getElementById('copyDoc').onclick=function(){navigator.clipboard&&navigator.clipboard.writeText(d.code)};}
+document.getElementById('list').addEventListener('click',function(e){var p=e.target.closest('button[data-code]');if(p)show(p.dataset.code)});
+['search','level','cat'].forEach(function(id){document.getElementById(id).addEventListener(id==='search'?'input':'change',filterDocs)});
+fetch('./data.json',{cache:'no-store'}).then(function(r){if(!r.ok)throw new Error('HTTP '+r.status);return r.json()}).then(function(r){all=r.documents||[];document.getElementById('total').textContent=all.length;document.getElementById('mandatory').textContent=all.filter(function(x){return x.category==='M'}).length;filterDocs();if(all.length)show(all[0].code)}).catch(function(e){document.getElementById('list').textContent='Katalog belum dapat dimuat: '+e.message});
+</script></body></html>
