@@ -1,0 +1,37 @@
+name: Validasi Katalog DMS XSys
+on:
+  push:
+    paths:
+      - 'public/dms-iso14001/**'
+      - '.github/workflows/dms-validation.yml'
+  pull_request:
+    paths:
+      - 'public/dms-iso14001/**'
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Cek nomor, metadata, status, dan tautan dokumen
+        run: |
+          python - <<'PY'
+          import json, re, pathlib
+          p=pathlib.Path('public/dms-iso14001/data.json')
+          data=json.loads(p.read_text(encoding='utf-8'))
+          items=data['documents']
+          assert len(items)==64, f'Expected 64 documents, got {len(items)}'
+          codes=[d['code'] for d in items]
+          assert len(set(codes))==len(codes), 'Duplicate document code'
+          levels={'DL1':4,'DL2':17,'DL3':25,'DL4':18}
+          for level,n in levels.items():
+              assert sum(d['level']==level for d in items)==n, level
+          for d in items:
+              assert re.fullmatch(r'TSA-SML-DL[1-4]-\d{3}', d['code']), d['code']
+              assert d['revision'] in ('00','01','02','03','04','05'), d['code']
+              assert d['status']=='DRAFT_SAMPLE', 'Do not publish unapproved documents'
+              assert d['url'].startswith('https://drive.google.com/file/d/'), d['code']
+              assert d['title'].strip() and d['clause'].strip()
+          print('PASS: 64 unique documents, permitted metadata and restricted Drive links')
+          PY
