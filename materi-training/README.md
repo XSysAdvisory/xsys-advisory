@@ -26,3 +26,10 @@ Direktori ini merupakan ruang publik. Hanya materi yang telah disetujui untuk pu
 
 ## Kontak
 XSys•Advisory | [Website](https://xsys-advisory.netlify.app/) | xsys.advisory@gmail.com | [WhatsApp](https://wa.me/6281999197400)
+
+## Akses berdasarkan jenis materi
+
+- [Materi Training](./materi-training/) — Modul, slide, e-book, panduan dan handout peserta.
+- [Regulasi](./regulasi/) — Tautan resmi regulasi nasional dan internasional, referensi standar, status berlaku dan ringkasan kewajiban.
+- [Smart Matrik](./smart-matrik/) — Matriks kewajiban dokumen, checklist audit internal dan pemenuhan mandatori; termasuk kolom bukti, PIC, status dan tindak lanjut.
+- [Soal Workshop](./soal-workshop/) — Studi kasus, soal simulasi, petunjuk pengerjaan dan lembar kerja kosong untuk peserta.
