@@ -1,0 +1,12 @@
+{
+  "name": "Laboratory Safety Practices — Smart E-Book by Rubai Ahmad",
+  "short_name": "Lab Safety",
+  "description": "Panduan praktis K3 laboratorium interaktif dari XSys Advisory",
+  "lang": "id",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f4f8f8",
+  "theme_color": "#12344b",
+  "icons": [{"src":"favicon.svg","sizes":"any","type":"image/svg+xml","purpose":"any"}]
+}
