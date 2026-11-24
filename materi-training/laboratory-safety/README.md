@@ -1,21 +1,20 @@
 # Laboratory Safety Management System (LSMS)
 
-K3 laboratorium, HIRADC, RAMP, pengendalian bahaya, tanggap darurat dan inspeksi keselamatan.
+**Risk-Based Laboratory Safety, Hazard Control & Emergency Preparedness**
 
-## Materi peserta
+Paket pembelajaran publik pendamping pelatihan K3 Laboratorium, Bandung, 23–24 November 2026. Dikembangkan untuk konteks laboratorium pengujian, bukan dokumen resmi BPOM.
 
-Direktori siap digunakan. Belum ada berkas pelatihan yang diunggah ke bagian ini.
+| Folder | Isi |
+|---|---|
+| [Materi Training](materi-training/) | E-book baca daring: 12 bab |
+| [Regulasi](regulasi/) | 24 referensi Indonesia, 16 acuan global, sumber resmi |
+| [Smart Matrik](smart-matrik/) | 34 dokumen, 78 pertanyaan audit, HIRADC-RAMP, mandatori, CAPA, rencana 30 hari |
+| [Soal Workshop](soal-workshop/) | 7 kasus, simulasi, 15 pre-test, 15 post-test |
 
-Jenis materi yang dapat ditambahkan: modul, presentasi, e-book, worksheet, checklist, studi kasus, pre-test/post-test peserta dan tautan referensi resmi.
+Materi edukasi publik, bukan dokumen resmi BPOM atau penetapan kepatuhan. Verifikasi penerapan berdasarkan regulasi mutakhir, SDS, fasilitas, SOP dan personel kompeten.
 
-[← Kembali ke katalog Training Resource Center](../)
+[Kembali ke katalog Training Resource Center](../)
+
 
 ---
-XSys•Advisory | [Website](https://xsys-advisory.netlify.app/) | xsys.advisory@gmail.com | 081999197400
-
-## Folder materi
-
-- [Materi Training](./materi-training/) — Modul, slide, e-book, panduan dan handout peserta.
-- [Regulasi](./regulasi/) — Tautan resmi regulasi nasional dan internasional, referensi standar, status berlaku dan ringkasan kewajiban.
-- [Smart Matrik](./smart-matrik/) — Matriks kewajiban dokumen, checklist audit internal dan pemenuhan mandatori; termasuk kolom bukti, PIC, status dan tindak lanjut.
-- [Soal Workshop](./soal-workshop/) — Studi kasus, soal simulasi, petunjuk pengerjaan dan lembar kerja kosong untuk peserta.
+Rubai Ahmad | Food Safety & QHSE Specialist | XSys•Advisory | [Website](https://xsys-advisory.netlify.app/) | xsys.advisory@gmail.com | 081999197400
