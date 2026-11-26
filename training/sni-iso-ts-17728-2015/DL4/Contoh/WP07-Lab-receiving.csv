@@ -1,0 +1,6 @@
+"ID sampel","Waktu tiba","Identitas","Integritas","Kuantitas","Kondisi","Durasi","CoC","Keputusan","Alasan/tindakan","PIC"
+"J-2611-U01","27/11/2026 10:00","Cocok","Utuh","102 g","20–23 °C (simulasi)","90 menit","Cocok","ACCEPT","Registrasi","Lab-A (contoh)"
+"J-2611-U02","27/11/2026 10:00","Cocok","Utuh","104 g","20–23 °C (simulasi)","80 menit","Cocok","ACCEPT","Registrasi","Lab-A (contoh)"
+"J-2611-U03","27/11/2026 10:00","Cocok","Segel rusak","101 g","20–23 °C (simulasi)","70 menit","Cocok","HOLD","Isolasi; konsultasi QA/lab","Lab-A (contoh)"
+"J-2611-U04","27/11/2026 10:00","Cocok","Utuh","103 g","20–23 °C (simulasi)","60 menit","Cocok","ACCEPT","Registrasi","Lab-A (contoh)"
+"J-2611-U05","27/11/2026 10:00","Cocok","Utuh","105 g","20–23 °C (simulasi)","50 menit","Cocok","ACCEPT","Registrasi","Lab-A (contoh)"

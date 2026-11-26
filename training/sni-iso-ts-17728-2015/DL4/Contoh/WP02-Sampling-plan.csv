@@ -1,0 +1,6 @@
+"Plan ID","Lot","Ukuran lot","Strata/titik","Target pemilihan","Teknik","Unit","Massa target g","Frekuensi","Justifikasi","Akses aman","Persetujuan"
+"PLAN-J2611","J-2611","20 t","0–4 t","1 titik/waktu sesuai strata","Aliran bongkar pada titik aman","U01","100","Per lot (simulasi)","Cakupan seluruh strata; desain hipotetis","Verifikasi sebelum sampling","Contoh"
+"PLAN-J2611","J-2611","20 t","4–8 t","1 titik/waktu sesuai strata","Aliran bongkar pada titik aman","U02","100","Per lot (simulasi)","Cakupan seluruh strata; desain hipotetis","Verifikasi sebelum sampling","Contoh"
+"PLAN-J2611","J-2611","20 t","8–12 t","1 titik/waktu sesuai strata","Aliran bongkar pada titik aman","U03","100","Per lot (simulasi)","Cakupan seluruh strata; desain hipotetis","Verifikasi sebelum sampling","Contoh"
+"PLAN-J2611","J-2611","20 t","12–16 t","1 titik/waktu sesuai strata","Aliran bongkar pada titik aman","U04","100","Per lot (simulasi)","Cakupan seluruh strata; desain hipotetis","Verifikasi sebelum sampling","Contoh"
+"PLAN-J2611","J-2611","20 t","16–20 t","1 titik/waktu sesuai strata","Aliran bongkar pada titik aman","U05","100","Per lot (simulasi)","Cakupan seluruh strata; desain hipotetis","Verifikasi sebelum sampling","Contoh"

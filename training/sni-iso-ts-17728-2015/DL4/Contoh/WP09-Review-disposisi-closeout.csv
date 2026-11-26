@@ -1,0 +1,2 @@
+"Lot","Plan ID","Jumlah direncanakan","Jumlah valid","Ringkasan hasil","Deviasi","Keputusan lot","Justifikasi","Tindakan/PIC","Target","Verifikasi efektivitas","Status","Persetujuan QA"
+"J-2611","PLAN-J2611","5","4","Contoh: 4 unit tidak terdeteksi; 1 tidak layak diuji","DEV-J2611-01","HOLD","Bukti 5 unit belum lengkap; hasil negatif tidak meniadakan keterbatasan plan","Evaluasi resampling dan investigasi segel / QA","Sesuai otorisasi","Belum","Terbuka","CONTOH – bukan release aktual"

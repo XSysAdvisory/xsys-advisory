@@ -1,0 +1,2 @@
+"ID permintaan","Tanggal","Produk","Lot","Tujuan","Parameter","Metode uji disetujui","Jumlah unit","Massa per unit","Komposit diizinkan","Wadah","Kondisi transport","Durasi maksimum","Kriteria penerimaan","PPC","Persetujuan QA/lab"
+"REQ-J2611","27/11/2026","Jagung","J-2611","Penerimaan","Salmonella","Konfirmasi metode lab","5","≥100 g","Tidak","Steril kering","15–25 °C (simulasi)","24 jam (simulasi)","ID/segel/massa/kondisi/waktu/CoC sesuai","QC-A","CONTOH – belum otorisasi nyata"

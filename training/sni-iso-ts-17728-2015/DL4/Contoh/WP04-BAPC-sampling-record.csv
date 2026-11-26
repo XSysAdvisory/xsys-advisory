@@ -1,0 +1,6 @@
+"Plan ID","ID sampel","Lot","Posisi massa bongkar","Waktu pengambilan","Massa aktual g","Metode/alat","Wadah","Petugas","Deviasi","Status"
+"PLAN-J2611","J-2611-U01","J-2611","1.5 t","08:30","102","Aliran bongkar aman; alat steril per unit","Kantong steril kering","QC-A","Tidak (simulasi)","GO"
+"PLAN-J2611","J-2611-U02","J-2611","5.8 t","08:40","104","Aliran bongkar aman; alat steril per unit","Kantong steril kering","QC-A","Tidak (simulasi)","GO"
+"PLAN-J2611","J-2611-U03","J-2611","10.6 t","08:50","101","Aliran bongkar aman; alat steril per unit","Kantong steril kering","QC-A","Tidak (simulasi)","GO"
+"PLAN-J2611","J-2611-U04","J-2611","14.2 t","09:00","103","Aliran bongkar aman; alat steril per unit","Kantong steril kering","QC-A","Tidak (simulasi)","GO"
+"PLAN-J2611","J-2611-U05","J-2611","18.7 t","09:10","105","Aliran bongkar aman; alat steril per unit","Kantong steril kering","QC-A","Tidak (simulasi)","GO"

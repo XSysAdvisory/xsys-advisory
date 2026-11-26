@@ -1,0 +1,4 @@
+"Shipment ID","Tanggal jam transfer","Dari","Ke","ID unit","Jumlah","Segel/kondisi","Log kondisi","Deviasi","Konfirmasi pihak"
+"SHIP-J2611","27/11/2026 09:20","QC-A","Dispatch","J-2611-U01 s.d. U05","5","S-101–105 utuh","20–23 °C (simulasi)","Tidak","CONTOH"
+"SHIP-J2611","27/11/2026 09:25","Dispatch","Kurir","J-2611-U01 s.d. U05","5","Utuh","Monitor aktif","Tidak","CONTOH"
+"SHIP-J2611","27/11/2026 10:00","Kurir","Lab","J-2611-U01 s.d. U05","5","S-103 rusak; lainnya utuh","20–23 °C (simulasi)","U03 HOLD","CONTOH"
